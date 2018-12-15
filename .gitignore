@@ -4,7 +4,6 @@ node_modules/
 semantic/
 
 # Output
-app/client/build/
 
 # macOS
 .DS_Store
