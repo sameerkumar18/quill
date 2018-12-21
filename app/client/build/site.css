@@ -22,11 +22,11 @@
       max-width: 320px;
       margin: 0 auto; }
       #login > .container > .content .logo {
-        max-width: 100px;
-        margin: .5rem auto 1rem auto; }
+        max-width: 150px;
+        margin: 0 auto; }
         #login > .container > .content .logo img {
-          width: 100px;
-          height: 100px; }
+          width: 150px;
+          height: 150px; }
       #login > .container > .content .button {
         color: white; }
         #login > .container > .content .button.login {
