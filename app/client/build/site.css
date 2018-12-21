@@ -10,7 +10,7 @@
   height: 100%;
   width: 100%;
   background-color: #473899;
-  background: url("https://s3.amazonaws.com/hackmit-assets/tintedphoto_1920_1080_low.jpg");
+  background: url("bg.jpg");
   background-size: cover; }
   #login > .container {
     position: relative;
