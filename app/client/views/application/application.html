@@ -27,6 +27,13 @@
                  ng-model="user.profile.name">
         </div>
 
+        <div class="field">
+            <label> Mobile Number </label>
+            <input type="number"
+                    name="mobileNumber"
+                    ng-model="user.profile.number" required>
+        </div>
+
         <div class="field" ng-show="autoFilledSchool">
           <label> School </label>
           <input class="ui input"
@@ -36,13 +43,20 @@
         </div>
 
         <div class="field" ng-show="!autoFilledSchool">
-          <label> School </label>
+          <label> College </label>
           <div id="school" class="ui search">
             <div class="ui input">
-              <input class="prompt" type="text" placeholder="School" name="school" ng-model="user.profile.school">                
+              <input class="prompt" type="text" placeholder="College" name="school" ng-model="user.profile.school" required>
             </div>
             <div class="results"></div>
           </div>
+        </div>
+
+        <div class="field">
+          <label> Course </label>
+          <input type="text"
+                 name="course"
+                 ng-model="user.profile.course" required>
         </div>
 
         <div class="field">
@@ -76,6 +90,62 @@
           <input type="text"
                  placeholder="Designer, Data Scientist, iOS Wizard, Hacker Extraordinaire"
                  ng-model="user.profile.description">
+        </div>
+
+        <div class="field">
+            <label> Number of Hackathons Attended </label>
+            <input type="number"
+                    name="noOfHacks"
+                    ng-model="user.profile.noOfHacks" required>
+        </div>
+
+        <div class="field">
+            <label> Number of Hackathons Won </label>
+            <input type="number"
+                    name="noOfHacksWon"
+                    ng-model="user.profile.noOfHacksWon" required>
+        </div>
+
+        <div class="field">
+            <label> Github </label>
+            <input type="url"
+                    name="github"
+                    ng-model="user.profile.github" required>
+        </div>
+
+        <div class="field">
+            <label> LinkedIn </label>
+            <input type="url"
+                    name="linkedin"
+                    ng-model="user.profile.linkedin" required>
+        </div>
+
+        <div class="field">
+            <label> Resume URL </label>
+            <input type="url"
+                    name="resume"
+                    ng-model="user.profile.resume" required>
+        </div>
+
+        <div class="field">
+            <label> Behance/Dribble </label>
+            <input type="url"
+                    name="designLink"
+                    ng-model="user.profile.designLink">
+        </div>
+
+        <div class="field">
+            <label> Refered By (if any) </label>
+            <input type="text"
+                    name="reference"
+                    ng-model="user.profile.reference">
+        </div>
+
+        <div class="field">
+            <div class="ui checkbox">
+              <input type="checkbox" id="previousYear" ng-model="user.profile.previousYear">
+              <label>Have you attended last year's HackVSIT</label>
+            </div>
         </div>
 
         <div class="field">
